@@ -473,13 +473,13 @@
         <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-dark-800 to-transparent pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-3xl mx-auto mb-36">
+            <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-36">
                 <h2 class="text-white font-bold tracking-wide uppercase text-sm mb-3">Built for Every Industry</h2>
                 <h2 class="text-3xl md:text-4xl font-extrabold text-white">Powering Computer Vision Across Sectors</h2>
             </div>
 
             <!-- Hub and Spoke Visual -->
-            <div class="relative w-full max-w-5xl mx-auto">
+            <div class="hidden lg:block relative w-full max-w-5xl mx-auto">
                 <!-- SVG for connecting lines -->
                 <svg class="absolute inset-0 w-full h-full hidden lg:block" style="min-height: 650px;">
                     <!-- Spoke lines -->
@@ -559,53 +559,53 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Mobile/Tablet Fallback Grid -->
-                <div class="grid md:grid-cols-2 lg:hidden gap-6 mt-8">
-                    <!-- Autonomous Driving/ADAS -->
-                    <div class="group p-6 rounded-2xl bg-dark-800 border border-dark-700 hover:border-white/50 transition-all duration-300">
-                        <div class="w-12 h-12 bg-dark-900 rounded-xl flex items-center justify-center border border-dark-700 mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-car text-xl text-sky-500"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Autonomous Driving / ADAS</h3>
-                        <p class="text-sm text-slate-400 leading-relaxed">Precise object detection, lane segmentation, and traffic sign recognition for self-driving vehicles.</p>
+            <!-- Mobile/Tablet Fallback Grid -->
+            <div class="lg:hidden grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <!-- Autonomous Driving/ADAS -->
+                <div class="group p-6 rounded-2xl bg-dark-800 border border-dark-700 hover:border-white/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-dark-900 rounded-xl flex items-center justify-center border border-dark-700 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-car text-xl text-sky-500"></i>
                     </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Autonomous Driving / ADAS</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Precise object detection, lane segmentation, and traffic sign recognition for self-driving vehicles.</p>
+                </div>
 
-                    <!-- Farm Robots -->
-                    <div class="group p-6 rounded-2xl bg-dark-800 border border-dark-700 hover:border-white/50 transition-all duration-300">
-                        <div class="w-12 h-12 bg-dark-900 rounded-xl flex items-center justify-center border border-dark-700 mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-tractor text-xl text-green-500"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Farm Robots</h3>
-                        <p class="text-sm text-slate-400 leading-relaxed">Crop monitoring, weed detection, and harvest automation through accurate field data annotation.</p>
+                <!-- Farm Robots -->
+                <div class="group p-6 rounded-2xl bg-dark-800 border border-dark-700 hover:border-white/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-dark-900 rounded-xl flex items-center justify-center border border-dark-700 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-tractor text-xl text-green-500"></i>
                     </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Farm Robots</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Crop monitoring, weed detection, and harvest automation through accurate field data annotation.</p>
+                </div>
 
-                    <!-- Warehouse Automation -->
-                    <div class="group p-6 rounded-2xl bg-dark-800 border border-dark-700 hover:border-white/50 transition-all duration-300">
-                        <div class="w-12 h-12 bg-dark-900 rounded-xl flex items-center justify-center border border-dark-700 mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-warehouse text-xl text-purple-500"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Warehouse Automation</h3>
-                        <p class="text-sm text-slate-400 leading-relaxed">Package detection, inventory tracking, and robotic picking systems powered by high-quality labeled data.</p>
+                <!-- Warehouse Automation -->
+                <div class="group p-6 rounded-2xl bg-dark-800 border border-dark-700 hover:border-white/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-dark-900 rounded-xl flex items-center justify-center border border-dark-700 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-warehouse text-xl text-purple-500"></i>
                     </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Warehouse Automation</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Package detection, inventory tracking, and robotic picking systems powered by high-quality labeled data.</p>
+                </div>
 
-                    <!-- VLAs and General Purpose Robotics -->
-                    <div class="group p-6 rounded-2xl bg-dark-800 border border-dark-700 hover:border-white/50 transition-all duration-300">
-                        <div class="w-12 h-12 bg-dark-900 rounded-xl flex items-center justify-center border border-dark-700 mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-robot text-xl text-pink-500"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">VLAs & General Purpose Robotics</h3>
-                        <p class="text-sm text-slate-400 leading-relaxed">Multi-modal annotation for vision-language-action models and complex manipulation tasks.</p>
+                <!-- VLAs and General Purpose Robotics -->
+                <div class="group p-6 rounded-2xl bg-dark-800 border border-dark-700 hover:border-white/50 transition-all duration-300">
+                    <div class="w-12 h-12 bg-dark-900 rounded-xl flex items-center justify-center border border-dark-700 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-robot text-xl text-pink-500"></i>
                     </div>
+                    <h3 class="text-lg font-bold text-white mb-2">VLAs & General Purpose Robotics</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Multi-modal annotation for vision-language-action models and complex manipulation tasks.</p>
+                </div>
 
-                    <!-- E-commerce and Retail -->
-                    <div class="group p-6 rounded-2xl bg-dark-800 border border-dark-700 hover:border-white/50 transition-all duration-300 md:col-span-2">
-                        <div class="w-12 h-12 bg-dark-900 rounded-xl flex items-center justify-center border border-dark-700 mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-shopping-cart text-xl text-yellow-500"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">E-commerce & Retail</h3>
-                        <p class="text-sm text-slate-400 leading-relaxed">Product recognition, shelf monitoring, and checkout automation through accurate visual data labeling.</p>
+                <!-- E-commerce and Retail -->
+                <div class="group p-6 rounded-2xl bg-dark-800 border border-dark-700 hover:border-white/50 transition-all duration-300 md:col-span-2">
+                    <div class="w-12 h-12 bg-dark-900 rounded-xl flex items-center justify-center border border-dark-700 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-shopping-cart text-xl text-yellow-500"></i>
                     </div>
+                    <h3 class="text-lg font-bold text-white mb-2">E-commerce & Retail</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Product recognition, shelf monitoring, and checkout automation through accurate visual data labeling.</p>
                 </div>
             </div>
         </div>
