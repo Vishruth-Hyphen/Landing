@@ -364,7 +364,7 @@
             <div class="flex justify-center mb-12">
                 <div class="flex items-center bg-dark-900 p-1 rounded-lg border border-dark-700">
                     <button id="monthly-btn" onclick="switchPricing('monthly')" class="px-4 py-2 bg-white text-black rounded-md text-sm font-semibold shadow-md transition-all">Monthly</button>
-                    <button id="yearly-btn" onclick="switchPricing('yearly')" class="px-4 py-2 text-slate-400 hover:text-white rounded-md text-sm font-semibold transition-colors">Yearly <span class="text-white text-xs ml-1 font-normal">-20%</span></button>
+                    <button id="yearly-btn" onclick="switchPricing('yearly')" class="group px-4 py-2 text-slate-400 hover:text-white hover:bg-dark-800 rounded-md text-sm font-semibold transition-all">Yearly <span id="yearly-discount" class="text-slate-400 group-hover:text-white text-xs ml-1 font-normal transition-colors">-20%</span></button>
                 </div>
             </div>
 
@@ -694,6 +694,7 @@
             const yearlyBtn = document.getElementById('yearly-btn');
             const proPrice = document.getElementById('pro-price');
             const proPeriod = document.getElementById('pro-period');
+            const yearlyDiscount = document.getElementById('yearly-discount');
 
             if (period === 'monthly') {
                 // Update button styles
@@ -701,6 +702,9 @@
                 monthlyBtn.classList.remove('text-slate-400');
                 yearlyBtn.classList.remove('bg-white', 'text-black', 'shadow-md');
                 yearlyBtn.classList.add('text-slate-400');
+                // Update discount text color to match inactive state
+                yearlyDiscount.classList.remove('text-black');
+                yearlyDiscount.classList.add('text-slate-400');
                 
                 // Update pricing
                 proPrice.textContent = '$99';
@@ -711,6 +715,10 @@
                 yearlyBtn.classList.remove('text-slate-400');
                 monthlyBtn.classList.remove('bg-white', 'text-black', 'shadow-md');
                 monthlyBtn.classList.add('text-slate-400');
+                
+                // Update discount text color to black when yearly is active
+                yearlyDiscount.classList.remove('text-white', 'text-slate-400');
+                yearlyDiscount.classList.add('text-black');
                 
                 // Update pricing (20% discount: $99 * 0.8 = $79.20/month, or $950.40/year)
                 proPrice.textContent = '$79';
